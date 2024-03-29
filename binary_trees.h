@@ -73,4 +73,5 @@ avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent, avl_t **new, int value)
 int binary_tree_balance_factor(const binary_tree_t *tree);
 size_t binary_tree_height(const binary_tree_t *tree);
 
+
 #endif
