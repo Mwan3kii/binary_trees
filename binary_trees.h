@@ -37,6 +37,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 bst_t *bst_minimum(bst_t *node);
+avl_t *avl_insert(avl_t **tree, int value);
 size_t binary_tree_height(const binary_tree_t *tree);
 size_t binary_tree_depth(const binary_tree_t *tree);
 size_t binary_tree_size(const binary_tree_t *tree);
@@ -68,5 +69,8 @@ heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 int binary_tree_is_complete_recursive(const binary_tree_t *tree, unsigned int index, unsigned int node_count);
+avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent, avl_t **new, int value);
+int binary_tree_balance_factor(const binary_tree_t *tree);
+size_t binary_tree_height(const binary_tree_t *tree);
 
 #endif
